@@ -2,52 +2,52 @@
   "Quotes": [
     {
       "id": 1,
-      "quote": "Never Give Up",
+      "quotees": "Never Give Up",
       "author": "Life"
     },
     {
       "id": 2,
-      "quote": "The way I see it,if you want the rainbow, you gotta put up with the rain",
+      "quotees": "The way I see it,if you want the rainbow, you gotta put up with the rain",
       "author": "Dolly Patron"
     },
     {
       "id": 3,
-      "quote": "If your ship doesn't come in, swim out to it",
+      "quotees": "If your ship doesn't come in, swim out to it",
       "author": "Jonathan Winters"
     },
     {
       "id": 4,
-      "quote": "When you get tired, learn to rest, Not quit",
+      "quotees": "When you get tired, learn to rest, Not quit",
       "author": "Ramsey"
     },
     {
       "id": 5,
-      "quote": "The purpose of our lives is to be happy",
+      "quotees": "The purpose of our lives is to be happy",
       "author": "Dalai Lama"
     },
     {
       "id": 6,
-      "quote": "You only live once but if you do it right, once is enough",
+      "quotees": "You only live once but if you do it right, once is enough",
       "author": "Mae West"
     },
     {
       "id": 7,
-      "quote": "The only way to find your voice is to use it",
+      "quotees": "The only way to find your voice is to use it",
       "author": "Jen Mueller"
     },
     {
       "id": 8,
-      "quote": "Fear kills all dreams than failure ever will",
+      "quotees": "Fear kills all dreams than failure ever will",
       "author": "Suzzy Kaseem"
     },
     {
       "id": 9,
-      "quote": "Start where you are, use what you have, Do what you can",
+      "quotees": "Start where you are, use what you have, Do what you can",
       "author": "Arthur ashe"
     },
     {
       "id": 10,
-      "quote": "Inorder to write about life, first you must live it",
+      "quotees": "Inorder to write about life, first you must live it",
       "author": "Ernest Hemingway"
     }
   ]
