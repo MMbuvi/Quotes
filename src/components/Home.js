@@ -13,6 +13,14 @@ function Home () {
         setAuthor(event.target.value);
         setFormData({...formData,author : author});
     }
+    function changeQuotee(event){
+        setQuotees(event.target.value)
+        setFormData({...formData,quotees : quotees});
+    }
+    
+     
+    function handleSubmit(event){
+        event.preventDefault();
     
     useEffect(() => {
      fetch("http://localhost:3000/Quotes")
