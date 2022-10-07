@@ -7,10 +7,12 @@ function Quoteitem ( { quote ,clickFunction }) {
         <>
         <h2>{author}</h2>
         <p>{quotees}</p>
-        <button
+        <button className="button" style = {{"background-color":"blue"}}
         onClick={() => clickFunction(id)}
         >I Don't like this quote</button>
         {/* {author === "Life" ? <button>Edit Qoute</button> : null} */}
     </>
     )
 }
+
+export default Quoteitem

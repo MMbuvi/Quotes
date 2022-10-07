@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.button {
+  color: rgb(226, 226, 197);
+}
+
+nav{
+  color: red;
+}
+*{
+  background-color: rgb(181, 189, 185);
+}
