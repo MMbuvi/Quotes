@@ -71,12 +71,18 @@ function Home () {
 
 
     return (
-        <>
-        
-        <Quotelist quotes={quotes} clickFunction={deleteAnItem} />
-        
-        <Quoteform />
-    </>
+        <div>
+        <Navigation />
+        <Switch>
+            <Route path="/form">
+                <Quoteform submitEvent={handleSubmit} quotes={quotes} author={author} quotees={quotees} changeAuthor={changeAuthor} changeQuotee={changeQuotee}/>
+            </Route>
+
+            <Route path="/">
+                <Quotelist quotes={quotes} clickFunction={deleteAnItem}/>
+            </Route>
+        </Switch>
+    </div>
     )
 }
 
