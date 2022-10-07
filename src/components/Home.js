@@ -3,7 +3,11 @@ import Quotelist from "./quotelist";
 import Quoteform from "./quoteform";
 
 function Home () {
-    const [ quotes , setQuotes ] = useState([]); 
+    const [ quotes , setQuotes ] = useState([]);
+    const [ author, setAuthor ] = useState("");
+    const [ quotees, setQuotees ] = useState("");
+
+    const [ formData, setFormData ] = useState({ author : author, quotees : quotees }); 
     
     
     useEffect(() => {
