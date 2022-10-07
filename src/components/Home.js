@@ -2,6 +2,16 @@ import React, { useState, useEffect } from "react";
 import Quotelist from "./quotelist";
 import Quoteform from "./quoteform";
 
+function Navigation(){
+    return (
+        <div>
+            <Link to="/">Home</Link>
+            <br/>
+            <Link to="/form">Add A Quote</Link>
+        </div>
+    )
+}
+
 function Home () {
     const [ quotes , setQuotes ] = useState([]);
     const [ author, setAuthor ] = useState("");
@@ -22,7 +32,7 @@ function Home () {
     function handleSubmit(event){
         event.preventDefault();
 
-        
+
         fetch("http://localhost:3000/Quotes",{
             method : "POST",
             headers : {
