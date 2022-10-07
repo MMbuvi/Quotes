@@ -1,16 +1,4 @@
 import React from "react";
 import Quoteitem from "./quoteitem";
 
-function Quotelist( { quotes , clickFunction ,}){
-
-    
-    return(
-        <>
-        <h1 style = {{color: "brown"}} >RANDOM QUOTES</h1>
-        {quotes.map((item) => {
-                return  <Quoteitem  key={item.id} quote={item} clickFunction={clickFunction}/>
-        })}
-        </>
-    )
-}
- export default Quotelist
+function Quotelist( { quotes , clickFunction  }){
