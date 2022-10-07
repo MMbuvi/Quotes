@@ -21,7 +21,27 @@ function Home () {
      
     function handleSubmit(event){
         event.preventDefault();
+
+        
+        fetch("http://localhost:3000/Quotes",{
+            method : "POST",
+            headers : {
+              "Content-Type" : "application/json"
+            },
+            body : JSON.stringify(formData)
+          })
+          .then(r => r.json())
+          .then(() => {
+            setQuotes([...quotes,formData])
+        })
+          .catch(e => console.log(e))
     
+          setFormData({
+            author : "",
+            quotees : ""
+          });
+    
+        }
     useEffect(() => {
      fetch("http://localhost:3000/Quotes")
      .then(r => r.json())
