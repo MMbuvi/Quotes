@@ -24,7 +24,7 @@ function handleChange(e){
     <>
       <form onSubmit={handleSubmit}>
         <label>
-         Name :  <input type="text" value={formData.name} onChange={handleChange}/>
+         Name :  <input type="text" value={formData.name} onchange={handleChange}/>
           </label>
           <label>
             Qoute : <input type="text" value={formData.quote} onChange={handleChange}/>

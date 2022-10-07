@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 import Quotelist from "./quotelist";
 import Quoteform from "./quoteform";
 
@@ -27,8 +26,10 @@ function Home () {
 
     return (
         <>
-        <Quoteform />
+        
         <Quotelist quotes={quotes} clickFunction={deleteAnItem} />
+        
+        <Quoteform />
     </>
     )
 }

@@ -5,12 +5,12 @@ function Quoteitem ( { quote ,clickFunction  }) {
 
     return (
         <>
-            <h2>{author}</h2>
-            <p>{quotees}</p>
+            <h2 style = {{color:"green"}} >{author}</h2>
+            <p  style ={{color:"black"}}>{quotees}</p>
             <button
             onClick={() => clickFunction(id)}
             >I Don't like this quote</button>
-            {author === "Life" ? <button>Edit Qoute</button> : null}
+            {/* {author === "Life" ? <button>Edit Qoute</button> : null} */}
         </>
     )
 }
