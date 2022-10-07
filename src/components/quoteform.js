@@ -1,36 +1,26 @@
 import React from "react";
-import { useState } from "react";
 
-function Quoteform() {
-
-  const [ formData , setFormData ] = useState({
-    name  : "",
-    quote : ""
-})
-
-function handleSubmit(e){
-  e.preventDefault();
-  console.log("submitting Form")
-}
-
-function handleChange(e){
- 
-  setFormData({...formData,[e.target.name] : [e.target.value]})
-  console.log(formData);
-  console.log("Fire up handlechange event")
-}
+function Quoteform( { author, quotees , changeAuthor, changeQuotee , submitEvent }) {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <h3>ADD YOUR QUOTE</h3>
+      <form onSubmit={submitEvent}>
         <label>
-         Name :  <input type="text" value={formData.name} onchange={handleChange}/>
+         Author :  <input type="text" value={author} onChange={changeAuthor}/>
           </label>
+          <br/>
           <label>
-            Qoute : <input type="text" value={formData.quote} onChange={handleChange}/>
+            Qoute :  <input type="text" value={quotees} onChange={changeQuotee}/>
           </label>
+          <br/>
         <input type="submit"/>
       </form>
+
+      <div>
+          <h3> Author: {author}</h3>
+          <h3>Quote:  {quotees}</h3>
+      </div>
     </>
   );
 }
