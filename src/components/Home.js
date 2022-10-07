@@ -9,6 +9,10 @@ function Home () {
 
     const [ formData, setFormData ] = useState({ author : author, quotees : quotees }); 
     
+    function changeAuthor(event){
+        setAuthor(event.target.value);
+        setFormData({...formData,author : author});
+    }
     
     useEffect(() => {
      fetch("http://localhost:3000/Quotes")
