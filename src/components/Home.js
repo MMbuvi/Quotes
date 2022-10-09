@@ -61,7 +61,7 @@ function Home () {
     }
     
     useEffect(() => {
-     fetch("http://localhost:3000/Quotes")
+     fetch("https://thawing-coast-99369.herokuapp.com/quotes")
      .then(r => r.json())
      .then(d => {
          setQuotes(d)
